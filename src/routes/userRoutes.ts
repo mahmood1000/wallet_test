@@ -12,6 +12,13 @@ const UserSchema = Joi.object({
 
 const UserRoutes = (server: Server) => {
 	server.route({
+		method: 'GET',
+		path: '/users/{id}',
+		handler: (request, h) => {
+			return 'Welcome to wallet pay visit /documentation!';
+		},
+	})
+	server.route({
 		method: 'POST',
 		path: '/users',
 		handler: UserController.createUser,
