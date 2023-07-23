@@ -1,7 +1,7 @@
 import inert from '@hapi/inert'
 import vision from "@hapi/vision";
 import * as HapiSwagger from 'hapi-swagger';
-import packageJson from '../package.json'
+import packageJson from '../package.json' assert { type: 'json' };
 import Hapi, { Server } from "@hapi/hapi";
 import db from "./config/database";
 import config from "./config/config";
