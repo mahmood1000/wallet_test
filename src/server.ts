@@ -11,8 +11,7 @@ import UserRoutes from "./routes/userRoutes";
 const {MONGO_URL, PORT} = config;
 
 const server: Server = Hapi.server({
-	port: PORT,
-	host: 'localhost'
+	port: PORT
 });
 
 const swaggerOptions: HapiSwagger.RegisterOptions = {
